@@ -34,11 +34,11 @@
     },
     {
       "image": "",
-      "name": "Test 02",
-      "price": "25.90",
-      "description": "ajajajaja",
+      "name": "test",
+      "price": "122222",
+      "description": "test",
       "available": false,
-      "id": 5
+      "id": 6
     }
   ]
 }

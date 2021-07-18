@@ -1,29 +1,22 @@
-import { Component, createRef } from 'react';
+import { createRef } from 'react';
 import { FiCheckSquare } from 'react-icons/fi';
+import { FormHandles } from '@unform/core';
 
 import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
-import { FormHandles } from '@unform/core';
-
-interface EditFoodProps {
-  name: string;
-  description: string;
-  price: number;
-  image: string;
-}
-
+import FoodModel from '../../types/Food';
 interface ModalEditFoodProps {
   setIsOpen: () => void;
-  handleUpdateFood: (food: EditFoodProps) => void;
+  handleUpdateFood: (food: FoodModel) => void;
   isOpen: boolean;
-  editingFood: EditFoodProps;
+  editingFood: FoodModel;
 }
 
 const ModalEditFood = ({ setIsOpen, handleUpdateFood, isOpen, editingFood }: ModalEditFoodProps) => {
   const formRef = createRef<FormHandles>();
 
-  const handleSubmit = async (data: EditFoodProps) => {
+  const handleSubmit = async (data: FoodModel) => {
     handleUpdateFood(data);
     setIsOpen();
   };
