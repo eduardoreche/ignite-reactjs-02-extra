@@ -31,6 +31,14 @@
       "description": "Test",
       "available": true,
       "id": 4
+    },
+    {
+      "image": "",
+      "name": "Test 02",
+      "price": "25.90",
+      "description": "Test Test TEst",
+      "available": false,
+      "id": 5
     }
   ]
 }
